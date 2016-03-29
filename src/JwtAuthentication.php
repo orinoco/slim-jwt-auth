@@ -121,6 +121,8 @@ class JwtAuthentication
             $request = $request->withAttribute($this->options["attribute"], $decoded);
         }
 
+        // JW
+
         /* Everything ok, call next middleware and return. */
         return $next($request, $response);
     }
